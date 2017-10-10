@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-//加一行注释
+
 
 
 public class MainActivity extends Activity {
