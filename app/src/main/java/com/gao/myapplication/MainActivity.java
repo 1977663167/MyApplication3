@@ -5,7 +5,6 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import android.app.Activity;
@@ -15,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+//加一行注释
 
 
 public class MainActivity extends Activity {
@@ -22,12 +22,8 @@ public class MainActivity extends Activity {
 
     boolean isConnect=true;//连接还是断开
     Button ConnectButton;//定义连接按钮
-    Button SendButton;//定义发送按钮
-    Button LiangButton;//定义发送按钮
-    Button MieButton;//定义发送按钮
     EditText IPEditText;//定义ip输入框
     EditText PortText;//定义端口输入框
-    EditText MsgEditText;//定义信息输出框
     Socket socket = null;//定义socket
 
     private OutputStream outputStream=null;//定义输出流
