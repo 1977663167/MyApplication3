@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gao.myapplication.MainActivity">
+
+    <Button
+        android:text="卧室灯"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="客厅灯"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="选择你要控制的灯"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp" />
+
+    <Button
+        android:text="选项"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="退出"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button3"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp" />
+
+    <Button
+        android:text="厨房灯"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--显示的标题：目标IP地址-->
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/IP_tv"
+        android:text="目标IP地址"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <!--显示的标题：目标端口号-->
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/Port_tv"
+        android:text="目标端口号"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IP_tv"
+        android:layout_marginTop="30dp"
+        />
+
+    <!-- 用于填写ip地址的文本框-->
+    <!-- 用于填写端口号的文本框-->
+    <!-- 用于发送信息的文本框-->
+    <!-- 用于连接的按钮-->
+    <!-- 用于发送信息的按钮-->
+    <!-- 用于接收信息的文本框-->
+
+
+    <EditText
+        android:text="8080"
+        android:id="@+id/Port_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Port_tv"
+        android:layout_alignBottom="@+id/Port_tv"
+        android:layout_alignLeft="@+id/ip_ET"
+        android:layout_alignStart="@+id/ip_ET" />
+
+    <EditText
+        android:text="192.168.1.102"
+        android:id="@+id/ip_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Port_ET"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#5d5151"
+        android:layout_x="104dp"
+        android:layout_y="40dp"
+        android:layout_alignBottom="@+id/button29"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></DigitalClock>
+
+    <Button
+        android:text="连接"
+        android:id="@+id/Connect_Bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Connect_onClick"
+        android:layout_alignTop="@+id/Port_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="校时"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button29"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/Connect_Bt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/activity_main17"
+android:layout_width="fill_parent"
+android:layout_height="match_parent"
+android:background="#fcfcfc"
+    >
+    <DigitalClock
+        android:id="@+id/dClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#5d5151"
+        android:layout_x="104dp"
+        android:layout_y="40dp"
+        >
+    </DigitalClock>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开灯时间"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_x="28dp"
+        android:layout_y="113dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/setTime5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_default"
+        android:textColor="#df2020"
+        android:textSize="16sp"
+        android:layout_x="29dp"
+        android:layout_y="261dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/setTime1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_default"
+        android:textColor="#db1a1a"
+        android:textSize="16sp"
+        android:layout_x="28dp"
+        android:layout_y="167dp"
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关灯时间"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_x="29dp"
+        android:layout_y="215dp"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/mButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置时间"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_x="146dp"
+        android:layout_y="108dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/mButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_button2"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_x="257dp"
+        android:layout_y="109dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/mButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置时间"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_x="144dp"
+        android:layout_y="210dp"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/mButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_button2"
+        android:textColor="#b34040"
+        android:textSize="18sp"
+        android:layout_x="256dp"
+        android:layout_y="211dp"
+        >
+    </Button>
+
+    <Button
+        android:text="返回"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="266dp"
+        android:layout_y="490dp"
+        android:id="@+id/button18" />
+
+    <TextView
+        android:id="@+id/setTime2"
+        android:layout_x="47dp"
+        android:layout_y="-550dp"
+        android:text="    "
+        android:layout_width="219dp"
+        android:layout_height="432dp"
+        >
+    </TextView>
+
+</AbsoluteLayout>
